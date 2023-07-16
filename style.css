@@ -32,3 +32,28 @@ body {
     border-radius: 8px;
     border: none;
 }
+/* shared style end*/
+/* header section styles start */
+header{
+    background: rgba(255, 144, 14, 0.10);
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav >ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #424242;
+    font-weight: 600px;    
+}
+/* header section styles end */
