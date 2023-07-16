@@ -10,7 +10,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-.primary-title {
+.primary-title, .of-our, .features {
   color: #131313;  
   font-size: 2.8rem; 
   font-weight: 700;
@@ -33,6 +33,10 @@ body {
     border: none;
     padding: 20px 25px;
     cursor: pointer;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* shared style end*/
 /* header section styles start */
@@ -91,13 +95,53 @@ nav ul li a{
     width: 100%;
 }
 /* header section styles end */
+/* teams section styles start */
+.teams-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 85px 0 130px 0;
+    gap: 70px;
+   
+}
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-list{
+    color:#727272;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.of-our{
+    color:#131313
+}
+.features{
+    color: #FF900E;
+}
+.teams-section .primary-description{
+    margin: 24px 0 32px 0;
+}
+
+/* teams section styles end */
+
+/* feature section styles start */
+
+.features-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* feature section styles end */
 
 
 
-
-
-
-
+.features-section{
+    display: none;
+}
 
 
 
@@ -115,7 +159,7 @@ nav ul li a{
     header{
         padding: 30px;
     }
-    nav{
+    nav, .teams-section{
        flex-direction: column;       
     }
     nav ul {
@@ -124,6 +168,12 @@ nav ul li a{
     .banner-info{
         margin: 40px 0 40px 0;
     }
+    .teams-image{
+        grid-template-columns:1fr;
+    }
+    .teams-info{
+        padding: 15px;
+    }
 
 }
 
@@ -131,5 +181,8 @@ nav ul li a{
 @media screen and (min-width:576px) and (max-width: 960px) {
     header{
         padding: 30px;
+    }
+    .teams-section{
+        flex-direction: column;
     }
 }
