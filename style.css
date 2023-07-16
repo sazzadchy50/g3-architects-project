@@ -10,179 +10,216 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-.primary-title, .of-our, .features {
-  color: #131313;  
-  font-size: 2.8rem; 
+.primary-title,
+.of-our,
+.features {
+  color: #131313;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
-.primary-description{
-    color: #727272;    
-    font-size: 1rem;  
-    font-weight: 400; 
-    line-height: 1.5rem;  
+.primary-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
-.primary-btn{
-    color: #fff;
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 600; 
-    background: #FF900E;
-    border-radius: 8px;
-    border: none;
-    padding: 20px 25px;
-    cursor: pointer;
+.primary-btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: #ff900e;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 25px;
+  cursor: pointer;
 }
-main{
-    max-width: 1440px;
-    margin: 0 auto;
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /* shared style end*/
 /* header section styles start */
-header{
-    background: rgba(255, 144, 14, 0.10);
-    padding:50px 240px
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
 }
 
-nav{
-display: flex;
-justify-content: space-between;
-align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav >ul{
-    display: flex;
-    
-  
-    
+nav > ul {
+  display: flex;
 }
- nav ul li{
-    list-style: none;
-    font-size: 18px;
-    font-weight: 600px;   
-    margin-right: 20px;
- }
-nav ul li a{
-    text-decoration: none;
-   
-    color: #424242;
-    
+nav ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600px;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+
+  color: #424242;
 }
 
 /* banner style */
-.banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.banner-info{    
-    text-align: center;
-    max-width: 800px;
-    margin: 100px 0 50px 0;
-    
+.banner-info {
+  text-align: center;
+  max-width: 800px;
+  margin: 100px 0 50px 0;
 }
-.banner-title{
-    color: #131313;
-    font-size: 4rem;
-    font-weight: 700;
-    
+.banner-title {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
 }
-.banner-info .primary-description{
-    margin: 30px 0;
+.banner-info .primary-description {
+  margin: 30px 0;
 }
-.banner-img img{
-    width: 100%;
+.banner-img img {
+  width: 100%;
 }
 /* header section styles end */
 /* teams section styles start */
-.teams-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 85px 0 130px 0;
-    gap: 70px;
-   
+.teams-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 85px 0 130px 0;
+  gap: 70px;
 }
-.teams-image{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+.teams-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
-.quick-list{
-    color:#727272;
-    font-size: 2.8rem;
-    font-weight: 600;
+.quick-list {
+  color: #727272;
+  font-size: 2.8rem;
+  font-weight: 600;
 }
-.of-our{
-    color:#131313
+.of-our {
+  color: #131313;
 }
-.features{
-    color: #FF900E;
+.features {
+  color: #ff900e;
 }
-.teams-section .primary-description{
-    margin: 24px 0 32px 0;
+.teams-section .primary-description {
+  margin: 24px 0 32px 0;
 }
 
 /* teams section styles end */
 
 /* feature section styles start */
 
-.features-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 130px;
 }
-
+.features-section .primary-title {
+  border-left: 5px solid #ff900e;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.features-section .card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin: 20px 0;
+  padding: 30px;
+}
+.features-section .card-title {
+  margin-bottom: 10px;
+}
+.features-section .features-img {
+  border-radius: 8px;
+}
+.features-section button {
+  padding: 45px 42px;
+  background-color: #ff900e;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  bottom: 100px;
+  right: 70px;
+}
+.features-section button > h3 {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 700;
+}
+.features-section button > p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 /* feature section styles end */
-
-
-
-.features-section{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* responsive style media query */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    header{
-        padding: 30px;
-    }
-    nav, .teams-section{
-       flex-direction: column;       
-    }
-    nav ul {
-        margin-top: 30px;
-    }
-    .banner-info{
-        margin: 40px 0 40px 0;
-    }
-    .teams-image{
-        grid-template-columns:1fr;
-    }
-    .teams-info{
-        padding: 15px;
-    }
-
+  header {
+    padding: 30px;
+  }
+  nav,
+  .teams-section,
+  .features-section {
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 30px;
+  }
+  .banner-info {
+    margin: 40px 0 40px 0;
+  }
+  .teams-image {
+    grid-template-columns: 1fr;
+  }
+  .teams-info {
+    padding: 15px;
+  }
+  .features-section img {
+    width: calc(100vw - 20px);
+    margin: 0 10px;
+    
+  }
+  .features-section button {
+    position: static;
+    margin-left: 20px;
+  }
 }
 
 /* medium device */
-@media screen and (min-width:576px) and (max-width: 960px) {
-    header{
-        padding: 30px;
-    }
-    .teams-section{
-        flex-direction: column;
-    }
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 30px;
+  }
+  .teams-section,
+  .features-section {
+    flex-direction: column;
+    right: 0;
+  }
+  .features-section img {
+    width: calc(100vw - 20px);
+    margin: 0 10px;
+    
+  }
+  .features-section button {
+    position: static;
+    margin-left: 20px;
+ 
+  }
 }
