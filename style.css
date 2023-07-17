@@ -174,6 +174,8 @@ nav ul li a {
 }
 .facts-section .primary-title{
     margin-bottom: 24px;
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
 }
 .facts-container {
   display: flex;
@@ -262,8 +264,8 @@ footer p{
     position: static;
     margin-left: 20px;
   }
-  .facts-section{
-    margin: 0 10px;
+  .facts-section  {
+    margin: 100PX 10px;
   }
 }
 
@@ -290,7 +292,5 @@ footer p{
     position: static;
     margin-left: 20px;
   }
- {
-    padding: 20px;
-  }
+
 }
