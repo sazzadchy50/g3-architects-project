@@ -36,7 +36,8 @@ body {
   padding: 20px 25px;
   cursor: pointer;
 }
-main {
+main,
+footer {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -193,6 +194,40 @@ nav ul li a {
 
 /* facts section style end */
 
+
+/* sponsors section style start */
+.sponsors-section .primary-description{
+  margin-top: 24px;
+}
+.sponsors-info{
+  text-align: center;
+  row-gap: 30px;
+}
+
+.sponsors-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0 130px 0;
+  align-items: center;
+  gap: 20px;
+  
+}
+/* sponsors section style end */
+/* footer section style start*/
+footer{
+ padding: 40px;
+  background-color: #fff4e7;
+  margin-bottom: 130px;
+}
+footer p{
+  text-align: center;
+  color: #424242;
+  font-size: 20px;
+
+}
+/* footer section style end*/
+
+
 /* responsive style media query */
 /* mobile device */
 @media screen and (max-width: 576px) {
@@ -202,7 +237,8 @@ nav ul li a {
   nav,
   .teams-section,
   .features-section,
-  .facts-container{
+  .facts-container,
+  .sponsors-container{
     flex-direction: column;
   }
   nav ul {
@@ -214,7 +250,8 @@ nav ul li a {
   .teams-image {
     grid-template-columns: 1fr;
   }
-  .teams-info {
+  .teams-info,
+  .sponsors-section {
     padding: 15px;
   }
   .features-section img {
@@ -232,11 +269,16 @@ nav ul li a {
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  header {
+  header,
+  .teams-info,
+  .features-section,
+  .facts-section {
     padding: 30px;
   }
   .teams-section,
-  .features-section {
+  .features-section,
+  .facts-container,
+  .sponsors-container {
     flex-direction: column;
     right: 0;
   }
@@ -247,5 +289,8 @@ nav ul li a {
   .features-section button {
     position: static;
     margin-left: 20px;
+  }
+ {
+    padding: 20px;
   }
 }
